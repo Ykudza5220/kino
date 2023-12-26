@@ -1,0 +1,42 @@
+import {createBrowserRouter} from "react-router-dom"
+import Home from "./pages/Home";
+import Main from "./layout/Main";
+import Films from "./pages/Films";
+import NotFound from "./pages/NotFound";
+import FilmDetails from "./pages/FilmDetails";
+import Auth from "./layout/Auth";
+import Register from "./pages/Auth/Register";
+
+const router =createBrowserRouter([
+  {
+  path: "/",
+  element: <Main />,
+  errorElement:<NotFound/>,
+  children:[{
+    path: "/home",
+    element:<Home />,
+  },
+    { 
+      path: "/films",
+    element:<Films />,
+  },{
+    path:'films/:filmId',
+    element:<FilmDetails/>,
+  }
+],
+  },
+    {
+      path: "auth/",
+      element: <Auth />,
+      errorElement: <NotFound />,
+      children: [
+        {
+          path: "register/",
+          element: <Register />,
+        },
+      ],
+    },
+]);
+
+
+export default router;
