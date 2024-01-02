@@ -55,7 +55,7 @@ const Footer=()=>{
                     <div className="sb_footer-links_div">
                         <h4>Follow us</h4>
                         <div className="socialmedia">
-                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxgHQ2lOTbfvjI7qwdEiAld5tY8Db6ADeNmQ&usqp=CAU" alt="Иконки медиа" />
+                      
                         </div>
                     </div>
                 </div>

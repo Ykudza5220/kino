@@ -6,7 +6,7 @@ function Main (){
     return(
         <div className="App">
         <Navigation/>
-      <Grid container>
+      <Grid container sx={{marginTop:"1.25rem",minHeight:"100vh"}}>
          <Outlet/>
       </Grid>
        </div>
